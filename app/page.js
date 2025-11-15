@@ -958,7 +958,7 @@ export default function Home() {
                   className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors cursor-pointer"
                   onClick={() => setOpenFaq(openFaq === 1 ? null : 1)}
                 >
-                  <span className="font-medium text-[#333333]">How quickly can I set up my first A/B test?</span>
+                  <span className="font-medium text-[#333333]">How much does Abify cost?</span>
                   <svg 
                     className={`w-5 h-5 text-[#333333]/60 transition-transform ${openFaq === 1 ? 'rotate-180' : ''}`} 
                     fill="none" 
@@ -970,7 +970,7 @@ export default function Home() {
                 </button>
                 {openFaq === 1 && (
                   <div className="px-6 pb-4 text-[#333333]/70">
-                    You can set up your first A/B test in under 5 minutes! Simply add our lightweight script to your website, use our visual editor to create variants, and launch your test. No coding required for basic tests, though we also offer CSS/JS editors for advanced customization.
+                    Abify uses a conversion based pricing model. You only pay for what is meaningful for you. Free accounts include 1,000 conversions per month and come with all the features, so you can enjoy Abify totally free for smaller websites. Pro accounts get 10,000 conversions and Enterprise accounts include 100,000 conversions.
                   </div>
                 )}
               </div>
@@ -981,7 +981,7 @@ export default function Home() {
                   className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors cursor-pointer"
                   onClick={() => setOpenFaq(openFaq === 2 ? null : 2)}
                 >
-                  <span className="font-medium text-[#333333]">Will Abify slow down my website?</span>
+                  <span className="font-medium text-[#333333]">Does Abify slow down my website?</span>
                   <svg 
                     className={`w-5 h-5 text-[#333333]/60 transition-transform ${openFaq === 2 ? 'rotate-180' : ''}`} 
                     fill="none" 
@@ -993,7 +993,7 @@ export default function Home() {
                 </button>
                 {openFaq === 2 && (
                   <div className="px-6 pb-4 text-[#333333]/70">
-                    No! Abify is built for speed. Our script is only 8KB (20x smaller than competitors), loads in ~20ms, and applies variants in under 80ms. This means zero flicker and no noticeable impact on your site's performance. We're the fastest A/B testing tool on the market.
+                    No. Abify is designed to be very lightweight and minimally impact your site's performance. Its script is only 6 KB compressed and loads very quickly from edge servers globally. By using asynchronous loading and efficient logic, Abify never blocks rendering or causes flicker. Once the variant is applied, all other events such as tracking and goal events are sent to the server asynchronously, so there is no impact on site load whatsoever.
                   </div>
                 )}
               </div>
@@ -1004,7 +1004,7 @@ export default function Home() {
                   className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors cursor-pointer"
                   onClick={() => setOpenFaq(openFaq === 3 ? null : 3)}
                 >
-                  <span className="font-medium text-[#333333]">What's included in the free plan?</span>
+                  <span className="font-medium text-[#333333]">Does Abify run on SPA websites?</span>
                   <svg 
                     className={`w-5 h-5 text-[#333333]/60 transition-transform ${openFaq === 3 ? 'rotate-180' : ''}`} 
                     fill="none" 
@@ -1016,7 +1016,7 @@ export default function Home() {
                 </button>
                 {openFaq === 3 && (
                   <div className="px-6 pb-4 text-[#333333]/70">
-                    Our free plan includes unlimited A/B tests, 1 website, up to 1,000 conversions per month, 100 AI visual edits, real-time analytics, goal tracking, test scheduling, and basic email support. It's perfect for small projects and getting started with A/B testing.
+                    Yes. Abify is designed to run on any type of website. For SPAs, it monitors URL changes for page view goals and listens to other DOM changes to ensure accurate tracking and variant application.
                   </div>
                 )}
               </div>
@@ -1027,7 +1027,7 @@ export default function Home() {
                   className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors cursor-pointer"
                   onClick={() => setOpenFaq(openFaq === 4 ? null : 4)}
                 >
-                  <span className="font-medium text-[#333333]">Can I test on multiple pages or just one?</span>
+                  <span className="font-medium text-[#333333]">How does Abify assign users to test variations?</span>
                   <svg 
                     className={`w-5 h-5 text-[#333333]/60 transition-transform ${openFaq === 4 ? 'rotate-180' : ''}`} 
                     fill="none" 
@@ -1039,7 +1039,7 @@ export default function Home() {
                 </button>
                 {openFaq === 4 && (
                   <div className="px-6 pb-4 text-[#333333]/70">
-                    You can test on as many pages as you want! Create tests for individual pages, run site-wide experiments, or target specific page groups using URL targeting rules. Our platform supports complex multi-page funnels and cross-page experiments.
+                    Abify uses industry-standard deterministic hash-based assignment with SHA-256 encryption. This ensures each user consistently sees the same variant while maintaining perfectly random distribution across your visitor base - the same method used by Google Optimize and other enterprise A/B testing platforms.
                   </div>
                 )}
               </div>
@@ -1050,7 +1050,7 @@ export default function Home() {
                   className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors cursor-pointer"
                   onClick={() => setOpenFaq(openFaq === 5 ? null : 5)}
                 >
-                  <span className="font-medium text-[#333333]">How does Abify compare to Google Optimize?</span>
+                  <span className="font-medium text-[#333333]">How does Abify ensure test results are statistically reliable?</span>
                   <svg 
                     className={`w-5 h-5 text-[#333333]/60 transition-transform ${openFaq === 5 ? 'rotate-180' : ''}`} 
                     fill="none" 
@@ -1062,7 +1062,53 @@ export default function Home() {
                 </button>
                 {openFaq === 5 && (
                   <div className="px-6 pb-4 text-[#333333]/70">
-                    Since Google Optimize was sunset in 2023, Abify offers a modern, faster alternative. We're easier to set up, significantly faster (8KB vs 200KB+ scripts), offer both visual and code editors, and provide real-time analytics. Plus, our free tier is generous enough for most small to medium sites.
+                    Abify uses standard two-tailed z-tests with real p-value calculations (p &lt; 0.05 for 95% confidence). It enforces minimum sample sizes, calculates proper confidence intervals, and follows the same methodology used by industry-standard A/B testing platforms. This ensures your results are scientifically reliable, not just estimates.
+                  </div>
+                )}
+              </div>
+
+              {/* FAQ Item 6 */}
+              <div className="border border-gray-200 rounded-lg overflow-hidden">
+                <button
+                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors cursor-pointer"
+                  onClick={() => setOpenFaq(openFaq === 6 ? null : 6)}
+                >
+                  <span className="font-medium text-[#333333]">Can I use Abify to run server-side tests?</span>
+                  <svg 
+                    className={`w-5 h-5 text-[#333333]/60 transition-transform ${openFaq === 6 ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {openFaq === 6 && (
+                  <div className="px-6 pb-4 text-[#333333]/70">
+                    No. Abify is a client-side testing platform with a tiny script designed for result-oriented tests that deliver quick insights.
+                  </div>
+                )}
+              </div>
+
+              {/* FAQ Item 7 */}
+              <div className="border border-gray-200 rounded-lg overflow-hidden">
+                <button
+                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors cursor-pointer"
+                  onClick={() => setOpenFaq(openFaq === 7 ? null : 7)}
+                >
+                  <span className="font-medium text-[#333333]">Can I run Abify on WordPress, Webflow, Wix etc?</span>
+                  <svg 
+                    className={`w-5 h-5 text-[#333333]/60 transition-transform ${openFaq === 7 ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {openFaq === 7 && (
+                  <div className="px-6 pb-4 text-[#333333]/70">
+                    Yes, Abify works on all major CMS platforms.
                   </div>
                 )}
               </div>
@@ -1074,7 +1120,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 md:justify-items-center">
             {/* Logo and Description */}
             <div className="md:col-span-1">
               <div className="flex items-center gap-2 mb-4">
