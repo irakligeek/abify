@@ -641,7 +641,7 @@ export default function Home() {
         <div className="py-16 md:py-24 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6 md:px-10">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold sm:text-4xl mb-4">Pay for what matters</h2>
+              <h2 className="text-3xl font-bold sm:text-4xl mb-4">Pay For What Matters</h2>
               <p className="max-w-3xl mx-auto text-lg text-[#333333]/70">
                 Pay only when users convert, not for traffic. Abify's results-based pricing lets you optimize fast. Smaller sites can usually run all their tests on the free plan.
               </p>
