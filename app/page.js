@@ -41,7 +41,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-4">
           <div className="flex items-center justify-between whitespace-nowrap">
             <div className="flex items-center gap-2">
-              <img src="/logo.png" alt="Abify Logo" className="h-8 w-auto" />
+              <img src="/logo.png" alt="Abify Logo" className="h-6 w-auto" />
             </div>
             
             <div className="hidden md:flex flex-1 justify-end items-center gap-8">
@@ -98,7 +98,7 @@ export default function Home() {
       <main className="flex-grow w-full">
         {/* Hero Section */}
         <div className="w-full">
-          <div className="max-w-7xl mx-auto px-6 py-12 md:px-10 md:py-16">
+          <div className="max-w-7xl mx-auto px-6 py-4 md:px-10 md:py-6">
             <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-20">
               <div className="flex flex-col gap-6 text-center lg:text-left lg:w-1/2 lg:gap-8">
                 <div className="flex flex-col gap-4">
@@ -139,7 +139,7 @@ export default function Home() {
         </div>
 
         {/* Dashboard Preview Section */}
-        <div className="max-w-7xl mx-auto px-6 md:px-10 py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 py-2 md:py-4">
           <div className="flex flex-col items-center gap-6 md:gap-8">
             <div className="w-full">
               <div className="flex justify-center">
@@ -148,7 +148,7 @@ export default function Home() {
                     onClick={() => setActiveTab('test-results')}
                     className={`px-4 py-3 border-b-2 ${activeTab === 'test-results' ? 'border-[#4285F4] text-[#4285F4] font-semibold' : 'border-transparent text-[#333333]/60 hover:text-[#333333] hover:border-gray-300 font-medium'} text-sm transition-colors`}
                   >
-                    Test results
+                    Tests
                   </button>
                   <button 
                     onClick={() => setActiveTab('visual-editor')}
@@ -171,14 +171,48 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-8">
-                <div className="w-full bg-white shadow-xl rounded-xl overflow-hidden border border-gray-200 p-8">
-                  <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center">
-                    <span className="text-gray-400 text-2xl font-semibold">
-                      {activeTab === 'test-results' && 'Test Results Dashboard'}
-                      {activeTab === 'visual-editor' && 'Visual Editor Interface'}
-                      {activeTab === 'events' && 'Events Tracking'}
-                      {activeTab === 'analytics' && 'Analytics Dashboard'}
-                    </span>
+                <div className="w-full bg-white shadow-xl rounded-xl overflow-hidden border border-gray-200">
+                  {/* macOS Window Header */}
+                  <div className="bg-gray-100 px-4 py-3 border-b border-gray-200 flex items-center gap-2">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                      <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                      <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                    </div>
+                  </div>
+                  
+                  {/* Window Content */}
+                  <div className="p-4">
+                    <div className="aspect-video rounded-lg overflow-hidden">
+                      {activeTab === 'test-results' && (
+                        <img 
+                          src="/Tests.png" 
+                          alt="Test Results Dashboard" 
+                          className="w-full h-full object-cover"
+                        />
+                      )}
+                      {activeTab === 'visual-editor' && (
+                        <img 
+                          src="/visual-editor.png" 
+                          alt="Visual Editor Interface" 
+                          className="w-full h-full object-cover"
+                        />
+                      )}
+                      {activeTab === 'events' && (
+                        <img 
+                          src="/events.png" 
+                          alt="Events Tracking" 
+                          className="w-full h-full object-cover"
+                        />
+                      )}
+                      {activeTab === 'analytics' && (
+                        <img 
+                          src="/analytics.png" 
+                          alt="Analytics Dashboard" 
+                          className="w-full h-full object-cover"
+                        />
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -481,9 +515,9 @@ export default function Home() {
             {/* Performance Highlights */}
             <div className="grid md:grid-cols-3 gap-8 mb-16">
               <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
-                <div className="text-3xl font-bold text-[#3179e8] mb-2">8 KB</div>
+                <div className="text-3xl font-bold text-[#3179e8] mb-2">6.2 KB</div>
                 <div className="text-sm font-semibold text-[#333333] mb-1">Ultra-Small Script</div>
-                <div className="text-xs text-[#333333]/70">20x smaller than competitors</div>
+                <div className="text-xs text-[#333333]/70">25x smaller than competitors</div>
               </div>
               <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
                 <div className="text-3xl font-bold text-[#4fc47e] mb-2">~20ms</div>
@@ -521,28 +555,28 @@ export default function Home() {
                         </svg>
                         Abify
                       </td>
-                      <td className="py-4 px-4 text-center font-semibold text-[#4fc47e]">8 KB</td>
-                      <td className="py-4 px-4 text-center font-semibold text-[#4fc47e]">~20ms</td>
-                      <td className="py-4 px-4 text-center font-semibold text-[#4fc47e]">~260ms</td>
+                      <td className="py-4 px-4 text-center font-semibold text-[#4fc47e]">6.2 KB</td>
+                      <td className="py-4 px-4 text-center font-semibold text-[#4fc47e]">~80ms</td>
+                      <td className="py-4 px-4 text-center font-semibold text-[#4fc47e]">~120ms</td>
                       <td className="py-4 px-4 text-center font-semibold text-[#4fc47e]">~200ms</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
                       <td className="py-4 px-6 text-[#333333]">Optimizely</td>
-                      <td className="py-4 px-4 text-center text-red-500 font-medium">150-200 KB</td>
+                      <td className="py-4 px-4 text-center text-red-500 font-medium">50-150 KB</td>
                       <td className="py-4 px-4 text-center text-red-500 font-medium">~1.2s</td>
                       <td className="py-4 px-4 text-center text-red-500 font-medium">~600ms</td>
                       <td className="py-4 px-4 text-center text-red-500 font-medium">~1.8s</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
                       <td className="py-4 px-6 text-[#333333]">VWO</td>
-                      <td className="py-4 px-4 text-center text-red-500 font-medium">120-150 KB</td>
+                      <td className="py-4 px-4 text-center text-red-500 font-medium">100-150 KB</td>
                       <td className="py-4 px-4 text-center text-red-500 font-medium">~950ms</td>
                       <td className="py-4 px-4 text-center text-red-500 font-medium">~700ms</td>
                       <td className="py-4 px-4 text-center text-red-500 font-medium">~1.65s</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
                       <td className="py-4 px-6 text-[#333333]">Convert.com</td>
-                      <td className="py-4 px-4 text-center text-red-500 font-medium">203 KB</td>
+                      <td className="py-4 px-4 text-center text-red-500 font-medium">100-200 KB</td>
                       <td className="py-4 px-4 text-center text-red-500 font-medium">~1.23s</td>
                       <td className="py-4 px-4 text-center text-red-500 font-medium">~650ms</td>
                       <td className="py-4 px-4 text-center text-red-500 font-medium">~1.88s</td>
@@ -561,9 +595,9 @@ export default function Home() {
                     <h4 className="font-semibold text-[#3179e8]">Abify</h4>
                   </div>
                   <div className="grid grid-cols-2 gap-3 text-sm">
-                    <div><span className="text-[#333333]/70">Script Size:</span> <span className="font-semibold text-[#4fc47e]">8 KB</span></div>
-                    <div><span className="text-[#333333]/70">Variant:</span> <span className="font-semibold text-[#4fc47e]">~20ms</span></div>
-                    <div><span className="text-[#333333]/70">Response:</span> <span className="font-semibold text-[#4fc47e]">~260ms</span></div>
+                    <div><span className="text-[#333333]/70">Script Size:</span> <span className="font-semibold text-[#4fc47e]">6.2 KB</span></div>
+                    <div><span className="text-[#333333]/70">Variant:</span> <span className="font-semibold text-[#4fc47e]">~80ms</span></div>
+                    <div><span className="text-[#333333]/70">Response:</span> <span className="font-semibold text-[#4fc47e]">~120ms</span></div>
                     <div><span className="text-[#333333]/70">Total:</span> <span className="font-semibold text-[#4fc47e]">~200ms</span></div>
                   </div>
                 </div>
@@ -571,7 +605,7 @@ export default function Home() {
                 <div className="bg-white border border-gray-200 p-4 rounded-lg">
                   <h4 className="font-semibold text-[#333333] mb-3">Optimizely</h4>
                   <div className="grid grid-cols-2 gap-3 text-sm">
-                    <div><span className="text-[#333333]/70">Script Size:</span> <span className="text-red-500 font-medium">150-200 KB</span></div>
+                    <div><span className="text-[#333333]/70">Script Size:</span> <span className="text-red-500 font-medium">50-150 KB</span></div>
                     <div><span className="text-[#333333]/70">Variant:</span> <span className="text-red-500 font-medium">~1.2s</span></div>
                     <div><span className="text-[#333333]/70">Response:</span> <span className="text-red-500 font-medium">~600ms</span></div>
                     <div><span className="text-[#333333]/70">Total:</span> <span className="text-red-500 font-medium">~1.8s</span></div>
@@ -581,7 +615,7 @@ export default function Home() {
                 <div className="bg-white border border-gray-200 p-4 rounded-lg">
                   <h4 className="font-semibold text-[#333333] mb-3">VWO</h4>
                   <div className="grid grid-cols-2 gap-3 text-sm">
-                    <div><span className="text-[#333333]/70">Script Size:</span> <span className="text-red-500 font-medium">120-150 KB</span></div>
+                    <div><span className="text-[#333333]/70">Script Size:</span> <span className="text-red-500 font-medium">100-150 KB</span></div>
                     <div><span className="text-[#333333]/70">Variant:</span> <span className="text-red-500 font-medium">~950ms</span></div>
                     <div><span className="text-[#333333]/70">Response:</span> <span className="text-red-500 font-medium">~700ms</span></div>
                     <div><span className="text-[#333333]/70">Total:</span> <span className="text-red-500 font-medium">~1.65s</span></div>
@@ -591,7 +625,7 @@ export default function Home() {
                 <div className="bg-white border border-gray-200 p-4 rounded-lg">
                   <h4 className="font-semibold text-[#333333] mb-3">Convert.com</h4>
                   <div className="grid grid-cols-2 gap-3 text-sm">
-                    <div><span className="text-[#333333]/70">Script Size:</span> <span className="text-red-500 font-medium">203 KB</span></div>
+                    <div><span className="text-[#333333]/70">Script Size:</span> <span className="text-red-500 font-medium">100-200 KB</span></div>
                     <div><span className="text-[#333333]/70">Variant:</span> <span className="text-red-500 font-medium">~1.23s</span></div>
                     <div><span className="text-[#333333]/70">Response:</span> <span className="text-red-500 font-medium">~650ms</span></div>
                     <div><span className="text-[#333333]/70">Total:</span> <span className="text-red-500 font-medium">~1.88s</span></div>
