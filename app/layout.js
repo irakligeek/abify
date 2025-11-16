@@ -8,8 +8,36 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Abify - A/B Testing Platform | Fast, No-Code Website Testing",
-  description: "A self-serve, fast, lightweight A/B testing tool for quick setup and faster results. Test any website with no-code visual editor.",
+  title: "Abify - A/B Testing Software | Conversion Rate Optimization Platform",
+  description: "Professional A/B testing software for conversion optimization. Run split testing campaigns with our no-code A/B testing marketing platform. Boost conversion rates with data-driven test alternatives.",
+  keywords: [
+    "a/b testing",
+    "A/B split testing", 
+    "A/B testing marketing",
+    "A/B testing software",
+    "A/B tests",
+    "conversion optimization",
+    "conversion rate optimization",
+    "conversion rate optimization agency",
+    "split testing",
+    "test alternatives"
+  ].join(", "),
+  openGraph: {
+    title: "Abify - Split Testing Platform | Conversion Optimization Software",
+    description: "Professional A/B testing marketing platform for conversion rate optimization. Run A/B tests with our advanced split testing software.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Abify",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Abify - A/B Tests Platform | Conversion Rate Optimization Agency",
+    description: "Run A/B tests and explore test alternatives with our conversion optimization platform. Professional A/B testing for marketing teams.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },

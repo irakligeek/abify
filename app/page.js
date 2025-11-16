@@ -41,7 +41,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-4">
           <div className="flex items-center justify-between whitespace-nowrap">
             <div className="flex items-center gap-2">
-              <img src="/logo.png" alt="Abify Logo" className="h-6 w-auto" />
+              <img src="/logo.png" alt="Abify Logo" className="h-7 w-auto" />
             </div>
             
             <div className="hidden md:flex flex-1 justify-end items-center gap-8">
@@ -106,7 +106,7 @@ export default function Home() {
                     A/B Test Any Website, Fast, No-Code
                   </h1>
                   <h2 className="text-[#333333]/70 text-base font-normal leading-normal sm:text-lg">
-                    A self-serve, fast, lightweight A/B testing tool for quick setup and faster results.
+                    A self-serve, lightweight split testing platform for easy setup and fast results.
                   </h2>
                 </div>
                 <div className="flex flex-col items-center gap-2 lg:items-start">
@@ -187,28 +187,28 @@ export default function Home() {
                       {activeTab === 'test-results' && (
                         <img 
                           src="/Tests.png" 
-                          alt="Test Results Dashboard" 
+                          alt="A/B testing results dashboard showing conversion optimization metrics" 
                           className="w-full h-full object-cover"
                         />
                       )}
                       {activeTab === 'visual-editor' && (
                         <img 
                           src="/visual-editor.png" 
-                          alt="Visual Editor Interface" 
+                          alt="No-code visual editor for split testing" 
                           className="w-full h-full object-cover"
                         />
                       )}
                       {activeTab === 'events' && (
                         <img 
                           src="/events.png" 
-                          alt="Events Tracking" 
+                          alt="Conversion tracking events for A/B tests" 
                           className="w-full h-full object-cover"
                         />
                       )}
                       {activeTab === 'analytics' && (
                         <img 
                           src="/analytics.png" 
-                          alt="Analytics Dashboard" 
+                          alt="Conversion rate optimization analytics dashboard" 
                           className="w-full h-full object-cover"
                         />
                       )}
@@ -227,7 +227,7 @@ export default function Home() {
             <div className="flex flex-col items-center gap-4 text-center">
               <h2 className="text-3xl font-bold sm:text-4xl">Why Abify</h2>
               <p className="max-w-xl text-lg text-[#333333]/70">
-                Need a fast, lightweight A/B test that takes minutes to set up and won't slow your site? Abify gives you simple, instant testing without the bloat.
+                Need fast A/B testing software that takes minutes to set up and won’t slow your site? Abify gives you a lightweight conversion rate optimization platform for instant split testing without the bloat.
               </p>
             </div>
             <div className="grid w-full max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -378,7 +378,7 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="font-semibold text-[#333333]">Add Script Tag</div>
-                      <div className="text-sm text-[#333333]/70">Copy & paste one line of code</div>
+                      <div className="text-sm text-[#333333]/70">Add our tiny pixel script to your website.</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -396,7 +396,7 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="font-semibold text-[#333333]">Go Live</div>
-                      <div className="text-sm text-[#333333]/70">Launch your test, watch user events in real time</div>
+                      <div className="text-sm text-[#333333]/70">Schedule your test, watch user events in real time</div>
                     </div>
                   </div>
                 </div>
@@ -417,8 +417,7 @@ export default function Home() {
                   No-Code Visual Editor
                 </h3>
                 <p className="text-[#333333]/70 mb-6 text-lg leading-relaxed">
-                  Create variants in seconds using our intuitive visual editor. Edit, or add new elements on your page. 
-                  For advanced users, we also provide manual CSS/JS editors for complete control.
+                  Create variants in seconds using our intuitive visual editor. Edit or add new elements to your page. For advanced users, we also provide manual CSS/JS editors for full control.
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
@@ -437,7 +436,7 @@ export default function Home() {
                     <svg className="w-5 h-5 text-[#4fc47e]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                     </svg>
-                    <span className="text-[#333333]/80">Advanced CSS/JS editor available</span>
+                    <span className="text-[#333333]/80">Advanced CSS/JS editors available</span>
                   </div>
                 </div>
               </div>
@@ -498,6 +497,16 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+            
+            {/* CTA Button */}
+            <div className="flex justify-center mt-16">
+              <a 
+                href="https://dashboard.abify.app/login"
+                className="inline-flex items-center justify-center px-8 py-4 bg-[#4285F4] text-white rounded-lg font-bold text-base hover:bg-[#4285F4]/90 transition-colors shadow-lg"
+              >
+                Try Abify for Free
+              </a>
             </div>
           </div>
         </div>
@@ -643,7 +652,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold sm:text-4xl mb-4">Pay For What Matters</h2>
               <p className="max-w-3xl mx-auto text-lg text-[#333333]/70">
-                Pay only when users convert, not for traffic. Abify's results-based pricing lets you optimize fast. Smaller sites can usually run all their tests on the free plan.
+                Pay only when users convert, not for traffic. Abify's results-based pricing lets you optimize fast. Smaller sites can usually run all their tests on our free plan.
               </p>
             </div>
 
@@ -686,9 +695,9 @@ export default function Home() {
                     <span className="text-5xl font-bold text-[#333333]">$0</span>
                     <span className="text-[#333333]/60 ml-2">Per month</span>
                   </div>
-                  <button className="w-full py-3 px-6 bg-[#4285F4] text-white rounded-lg font-semibold hover:bg-[#4285F4]/90 transition-colors">
+                  <a href="https://dashboard.abify.app/" className="block w-full py-3 px-6 bg-[#4285F4] text-white rounded-lg font-semibold hover:bg-[#4285F4]/90 transition-colors text-center">
                     Get Started
-                  </button>
+                  </a>
                   <div className="mt-8 space-y-3">
                     <p className="font-semibold text-[#333333] mb-4">Includes:</p>
                     <div className="flex items-start gap-3">
@@ -769,9 +778,9 @@ export default function Home() {
                       Per month{billingPeriod === 'yearly' && ', billed annually'}
                     </span>
                   </div>
-                  <button className="w-full py-3 px-6 bg-[#4285F4] text-white rounded-lg font-semibold hover:bg-[#4285F4]/90 transition-colors">
+                  <a href="https://dashboard.abify.app/" className="block w-full py-3 px-6 bg-[#4285F4] text-white rounded-lg font-semibold hover:bg-[#4285F4]/90 transition-colors text-center">
                     Upgrade to Pro
-                  </button>
+                  </a>
                   <div className="mt-8 space-y-3">
                     <p className="font-semibold text-[#333333] mb-4">Includes:</p>
                     <div className="flex items-start gap-3">
@@ -829,9 +838,9 @@ export default function Home() {
                       Per month{billingPeriod === 'yearly' && ', billed annually'}
                     </span>
                   </div>
-                  <button className="w-full py-3 px-6 bg-[#4285F4] text-white rounded-lg font-semibold hover:bg-[#4285F4]/90 transition-colors">
+                  <a href="https://dashboard.abify.app/" className="block w-full py-3 px-6 bg-[#4285F4] text-white rounded-lg font-semibold hover:bg-[#4285F4]/90 transition-colors text-center">
                     Upgrade to Enterprise
-                  </button>
+                  </a>
                   <div className="mt-8 space-y-3">
                     <p className="font-semibold text-[#333333] mb-4">Includes:</p>
                     <div className="flex items-start gap-3">
@@ -922,10 +931,10 @@ export default function Home() {
               {/* Content */}
               <div className="relative py-16 md:py-20 px-8 md:px-16 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Ultra Fast A/B Testing Platform for Quick Results
+                  Start Your Conversion Rate Optimization Journey
                 </h2>
                 <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-                  Join thousands of teams who are optimizing their websites with confidence.
+                  Join thousands of teams using our A/B testing marketing platform to boost conversions.
                 </p>
                 <a 
                   href="https://dashboard.abify.app/login"
@@ -958,7 +967,7 @@ export default function Home() {
                   className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors cursor-pointer"
                   onClick={() => setOpenFaq(openFaq === 1 ? null : 1)}
                 >
-                  <span className="font-medium text-[#333333]">How much does Abify cost?</span>
+                  <span className="font-medium text-[#333333]">How much does A/B testing cost with Abify?</span>
                   <svg 
                     className={`w-5 h-5 text-[#333333]/60 transition-transform ${openFaq === 1 ? 'rotate-180' : ''}`} 
                     fill="none" 
@@ -981,7 +990,7 @@ export default function Home() {
                   className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors cursor-pointer"
                   onClick={() => setOpenFaq(openFaq === 2 ? null : 2)}
                 >
-                  <span className="font-medium text-[#333333]">Does Abify slow down my website?</span>
+                  <span className="font-medium text-[#333333]">Will Abify slow down my website?</span>
                   <svg 
                     className={`w-5 h-5 text-[#333333]/60 transition-transform ${openFaq === 2 ? 'rotate-180' : ''}`} 
                     fill="none" 
@@ -993,7 +1002,7 @@ export default function Home() {
                 </button>
                 {openFaq === 2 && (
                   <div className="px-6 pb-4 text-[#333333]/70">
-                    No. Abify is designed to be very lightweight and minimally impact your site's performance. Its script is only 6 KB compressed and loads very quickly from edge servers globally. By using asynchronous loading and efficient logic, Abify never blocks rendering or causes flicker. Once the variant is applied, all other events such as tracking and goal events are sent to the server asynchronously, so there is no impact on site load whatsoever.
+                    No. Abify is designed to be very lightweight and to minimally impact your site's performance. Its script is only 6 KB compressed and loads very quickly from edge servers worldwide. With asynchronous loading and efficient logic, Abify never blocks rendering or causes flicker. Once the variant is applied, all other events such as tracking and goals are sent to the server asynchronously, so there is no impact on site load whatsoever.
                   </div>
                 )}
               </div>
@@ -1027,7 +1036,7 @@ export default function Home() {
                   className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors cursor-pointer"
                   onClick={() => setOpenFaq(openFaq === 4 ? null : 4)}
                 >
-                  <span className="font-medium text-[#333333]">How does Abify assign users to test variations?</span>
+                  <span className="font-medium text-[#333333]">How does split testing assign users to test alternatives?</span>
                   <svg 
                     className={`w-5 h-5 text-[#333333]/60 transition-transform ${openFaq === 4 ? 'rotate-180' : ''}`} 
                     fill="none" 
@@ -1039,7 +1048,7 @@ export default function Home() {
                 </button>
                 {openFaq === 4 && (
                   <div className="px-6 pb-4 text-[#333333]/70">
-                    Abify uses industry-standard deterministic hash-based assignment with SHA-256 encryption. This ensures each user consistently sees the same variant while maintaining perfectly random distribution across your visitor base - the same method used by Google Optimize and other enterprise A/B testing platforms.
+                    Our A/B testing tool uses industry-standard deterministic hash-based assignment with SHA-256. This ensures each user consistently sees the same variant while maintaining a balanced distribution across your visitors. You can also control traffic allocation for each variant, giving you full flexibility. This method is used by leading conversion optimization agencies and enterprise split testing platforms.
                   </div>
                 )}
               </div>
@@ -1085,7 +1094,7 @@ export default function Home() {
                 </button>
                 {openFaq === 6 && (
                   <div className="px-6 pb-4 text-[#333333]/70">
-                    No. Abify is a client-side testing platform with a tiny script designed for result-oriented tests that deliver quick insights.
+                    No. Abify is a client-side testing platform with a tiny script designed for result-oriented tests that deliver quick insights. If you're looking for VWO alternatives or other major A/B testing platform alternatives for fast, quick split testing needs, Abify is the right choice for you.
                   </div>
                 )}
               </div>
@@ -1123,12 +1132,25 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 md:justify-items-center">
             {/* Logo and Description */}
             <div className="md:col-span-1">
-              <div className="flex items-center gap-2 mb-4">
-                <img src="/logo.png" alt="Abify Logo" className="h-8 w-auto brightness-0 invert" />
+              <div className="mb-4">
+                <img src="/logo.png" alt="Abify Logo" className="h-8 w-auto brightness-0 invert mb-3" />
+                <p className="text-gray-400 text-sm mb-4">
+                  Ultra-fast A/B testing platform for quick results.
+                </p>
+                {/* Social Icons */}
+                <div className="flex items-center gap-4">
+                  <a href="https://www.facebook.com/abifyapp/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                  </a>
+                  <a href="https://www.instagram.com/abify.app/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                    </svg>
+                  </a>
+                </div>
               </div>
-              <p className="text-gray-400 text-sm">
-                Ultra-fast A/B testing platform for quick results.
-              </p>
             </div>
 
             {/* Quick Links */}
