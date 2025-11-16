@@ -556,22 +556,45 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Performance Highlights */}
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
-                <div className="text-3xl font-bold text-[#3179e8] mb-2">6.2 KB</div>
-                <div className="text-sm font-semibold text-[#333333] mb-1">Ultra-Small Script</div>
-                <div className="text-xs text-[#333333]/70">25x smaller than competitors</div>
+            {/* Performance Highlights - Minimal Side Layout */}
+            <div className="grid md:grid-cols-3 gap-6 mb-16 max-w-5xl mx-auto">
+              <div className="flex items-center gap-6 p-6">
+                <div className="flex-shrink-0">
+                  <div className="w-20 h-20 rounded-full border-4 border-[#4285F4] flex items-center justify-center">
+                    <span className="text-2xl font-black text-[#4285F4]">6.2</span>
+                  </div>
+                </div>
+                <div className="flex-1 border-l-2 border-gray-200 pl-6">
+                  <div className="text-lg font-bold text-[#333333]">KB</div>
+                  <div className="text-sm font-semibold text-[#333333]/80 mb-1">Ultra-Small Script</div>
+                  <div className="text-xs text-[#333333]/60">25x smaller</div>
+                </div>
               </div>
-              <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
-                <div className="text-3xl font-bold text-[#4fc47e] mb-2">~20ms</div>
-                <div className="text-sm font-semibold text-[#333333] mb-1">Script Loading</div>
-                <div className="text-xs text-[#333333]/70">60x faster delivery</div>
+              
+              <div className="flex items-center gap-6 p-6">
+                <div className="flex-shrink-0">
+                  <div className="w-20 h-20 rounded-full border-4 border-[#4fc47e] flex items-center justify-center">
+                    <span className="text-2xl font-black text-[#4fc47e]">20</span>
+                  </div>
+                </div>
+                <div className="flex-1 border-l-2 border-gray-200 pl-6">
+                  <div className="text-lg font-bold text-[#333333]">ms</div>
+                  <div className="text-sm font-semibold text-[#333333]/80 mb-1">Script Loading</div>
+                  <div className="text-xs text-[#333333]/60">60x faster</div>
+                </div>
               </div>
-              <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
-                <div className="text-3xl font-bold text-[#8b5cf6] mb-2">~80ms</div>
-                <div className="text-sm font-semibold text-[#333333] mb-1">Variant Load</div>
-                <div className="text-xs text-[#333333]/70">8x faster load</div>
+              
+              <div className="flex items-center gap-6 p-6">
+                <div className="flex-shrink-0">
+                  <div className="w-20 h-20 rounded-full border-4 border-[#8b5cf6] flex items-center justify-center">
+                    <span className="text-2xl font-black text-[#8b5cf6]">80</span>
+                  </div>
+                </div>
+                <div className="flex-1 border-l-2 border-gray-200 pl-6">
+                  <div className="text-lg font-bold text-[#333333]">ms</div>
+                  <div className="text-sm font-semibold text-[#333333]/80 mb-1">Variant Load</div>
+                  <div className="text-xs text-[#333333]/60">8x faster</div>
+                </div>
               </div>
             </div>
 
