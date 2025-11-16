@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="mb-4">
               <img src="/logo.png" alt="Abify Logo" className="h-8 w-auto brightness-0 invert mb-3" />
               <p className="text-gray-400 text-sm mb-4">
-                Ultra-fast A/B testing platform for quick results.
+                Ultra-fast A/B testing for quick results. Launch split testing and conversion optimization experiments in seconds, your lightweight VWO alternative for higher conversion rates.
               </p>
               {/* Social Icons */}
               <div className="flex items-center gap-4">
@@ -48,12 +48,12 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-gray-400">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <a href="/terms" className="text-gray-300 hover:text-white text-sm transition-colors">
                   Terms & Conditions
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <a href="/privacy" className="text-gray-300 hover:text-white text-sm transition-colors">
                   Privacy Policy
                 </a>
               </li>
@@ -65,12 +65,12 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-gray-400">Support</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <a href="/contact" className="text-gray-300 hover:text-white text-sm transition-colors">
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
+                <a href="https://dashboard.abify.app/help" className="text-gray-300 hover:text-white text-sm transition-colors">
                   Help Center
                 </a>
               </li>
