@@ -103,7 +103,7 @@ export default function Home() {
               <div className="flex flex-col gap-6 text-center lg:text-left lg:w-1/2 lg:gap-8">
                 <div className="flex flex-col gap-4">
                   <h1 className="text-[#333333] text-4xl font-black leading-tight sm:text-5xl">
-                    A/B Test Any Website, Fast, No-Code
+                    A/B Test Any Website, <span className="inline-block text-white py-2 -skew-x-12 transform" style={{padding: '0 15px', backgroundColor: 'rgb(79, 196, 126)'}}>Fast</span>, No-Code
                   </h1>
                   <h2 className="text-[#333333]/70 text-base font-normal leading-normal sm:text-lg">
                     A self-serve, lightweight split testing platform to test new ideas quickly.
@@ -130,7 +130,7 @@ export default function Home() {
                   </div>
                   
                   {/* Feature Buttons */}
-                  <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-8 w-full">
+                  {/* <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-8 w-full">
                     <div className="flex flex-col items-center gap-2 p-3 bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
                       <svg className="w-6 h-6 text-[#4285F4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -159,7 +159,7 @@ export default function Home() {
                       </svg>
                       <span className="text-xs text-[#333333] text-center font-medium">Fast, lightweight pixel</span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="w-full lg:w-1/2">
@@ -960,30 +960,23 @@ export default function Home() {
         <div className="py-16 md:py-24">
           <div className="max-w-5xl mx-auto px-6 md:px-10">
             <div className="relative bg-[#4285F4] rounded-3xl overflow-hidden">
-              {/* Background Pattern */}
-              <div className="absolute inset-0 opacity-10">
-                <svg className="absolute -top-32 -left-20 w-96 h-96" viewBox="0 0 200 200">
-                  <circle cx="100" cy="100" r="120" fill="none" stroke="white" strokeWidth="0.5"/>
-                  <circle cx="100" cy="100" r="100" fill="none" stroke="white" strokeWidth="0.5"/>
-                  <circle cx="100" cy="100" r="80" fill="none" stroke="white" strokeWidth="0.5"/>
-                </svg>
-                <svg className="absolute top-0 right-0 w-96 h-96" viewBox="0 0 200 200">
-                  <circle cx="100" cy="100" r="80" fill="none" stroke="white" strokeWidth="0.5"/>
-                  <circle cx="100" cy="100" r="60" fill="none" stroke="white" strokeWidth="0.5"/>
-                  <circle cx="100" cy="100" r="40" fill="none" stroke="white" strokeWidth="0.5"/>
-                  <circle cx="100" cy="100" r="20" fill="none" stroke="white" strokeWidth="0.5"/>
-                </svg>
-                <svg className="absolute bottom-0 left-0 w-80 h-80" viewBox="0 0 200 200">
-                  <circle cx="100" cy="100" r="90" fill="none" stroke="white" strokeWidth="0.5"/>
-                  <circle cx="100" cy="100" r="70" fill="none" stroke="white" strokeWidth="0.5"/>
-                  <circle cx="100" cy="100" r="50" fill="none" stroke="white" strokeWidth="0.5"/>
-                  <circle cx="100" cy="100" r="30" fill="none" stroke="white" strokeWidth="0.5"/>
-                </svg>
-                <svg className="absolute top-1/2 left-1/3 w-48 h-48 -translate-y-1/2" viewBox="0 0 200 200">
-                  <circle cx="100" cy="100" r="70" fill="none" stroke="white" strokeWidth="0.3"/>
-                  <circle cx="100" cy="100" r="50" fill="none" stroke="white" strokeWidth="0.3"/>
-                  <circle cx="100" cy="100" r="30" fill="none" stroke="white" strokeWidth="0.3"/>
-                </svg>
+              {/* Background Pattern - Speed Lines */}
+              <div className="absolute inset-0">
+                {/* Speed streaks from left */}
+                <div className="absolute left-0 top-1/4 w-1/3 h-[2px] bg-gradient-to-r from-transparent via-white to-transparent opacity-20"></div>
+                <div className="absolute left-0 top-1/3 w-2/5 h-[1px] bg-gradient-to-r from-transparent via-white to-transparent opacity-15"></div>
+                <div className="absolute left-0 top-1/2 w-1/2 h-[3px] bg-gradient-to-r from-transparent via-white to-transparent opacity-25"></div>
+                <div className="absolute left-0 top-2/3 w-1/4 h-[1px] bg-gradient-to-r from-transparent via-white to-transparent opacity-10"></div>
+                <div className="absolute left-0 bottom-1/4 w-1/3 h-[2px] bg-gradient-to-r from-transparent via-white to-transparent opacity-20"></div>
+                
+                {/* Speed streaks from right */}
+                <div className="absolute right-0 top-1/5 w-2/5 h-[1px] bg-gradient-to-l from-transparent via-white to-transparent opacity-15"></div>
+                <div className="absolute right-0 top-2/5 w-1/3 h-[2px] bg-gradient-to-l from-transparent via-white to-transparent opacity-20"></div>
+                <div className="absolute right-0 bottom-1/3 w-1/2 h-[1px] bg-gradient-to-l from-transparent via-white to-transparent opacity-15"></div>
+                
+                {/* Diagonal speed lines */}
+                <div className="absolute -left-10 top-0 w-40 h-[1px] bg-gradient-to-r from-transparent to-white opacity-10 transform rotate-12"></div>
+                <div className="absolute -right-10 bottom-0 w-60 h-[2px] bg-gradient-to-l from-transparent to-white opacity-15 transform -rotate-12"></div>
               </div>
               
               {/* Content */}
