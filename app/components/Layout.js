@@ -16,7 +16,7 @@ export default function Layout({ children }) {
   });
 
   return (
-    <div id="top" className="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden bg-[#F9F9F9]">
+    <div id="top" className="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden bg-[#ffffff]">
       {/* Video Modal */}
       {demoModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70" onClick={() => setDemoModalOpen(false)}>
