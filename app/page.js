@@ -123,7 +123,7 @@ export default function Home() {
                     <a 
                       href="#"
                       onClick={(e) => { e.preventDefault(); setDemoModalOpen(true); }}
-                      className="text-[#4285F4] text-base font-medium underline hover:text-[#4285F4]/80 transition-colors sm:mt-[6px]"
+                      className="text-[#4285F4] text-base font-medium underline hover:text-[#4285F4]/80 transition-colors sm:mt-[10px]"
                     >
                       Watch a Demo
                     </a>
@@ -223,28 +223,28 @@ export default function Home() {
                         <img 
                           src="/Tests.png" 
                           alt="A/B testing results dashboard showing conversion optimization metrics" 
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
                         />
                       )}
                       {activeTab === 'visual-editor' && (
                         <img 
                           src="/visual-editor.png" 
                           alt="No-code visual editor for split testing" 
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
                         />
                       )}
                       {activeTab === 'events' && (
                         <img 
                           src="/events.png" 
                           alt="Conversion tracking events for A/B tests" 
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
                         />
                       )}
                       {activeTab === 'analytics' && (
                         <img 
                           src="/analytics.png" 
                           alt="Conversion rate optimization analytics dashboard" 
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
                         />
                       )}
                     </div>
