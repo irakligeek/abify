@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { trackCTAClick } from '../../lib/analytics';
 
 export default function Header({ setDemoModalOpen }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -35,6 +36,7 @@ export default function Header({ setDemoModalOpen }) {
               <div className="flex items-center gap-4">
                 <a 
                   href="https://dashboard.abify.app/login"
+                  onClick={() => trackCTAClick('header_dashboard')}
                   className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#4285F4] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#4285F4]/90 transition-colors"
                 >
                   <span className="truncate">Go To Dashboard</span>
@@ -62,7 +64,13 @@ export default function Header({ setDemoModalOpen }) {
               <a className="text-[#333333]/80 text-sm font-medium" href="#features" onClick={() => setMobileMenuOpen(false)}>Features</a>
               <a className="text-[#333333]/80 text-sm font-medium" href="#pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
               <a className="text-[#333333]/80 text-sm font-medium" href="/contact" onClick={() => setMobileMenuOpen(false)}>Contact Us</a>
-              <a href="https://dashboard.abify.app/login" className="w-full text-left text-[#4285F4] text-sm font-bold">Go To Dashboard</a>
+              <a 
+                href="https://dashboard.abify.app/login" 
+                onClick={() => trackCTAClick('mobile_header_dashboard')}
+                className="w-full text-left text-[#4285F4] text-sm font-bold"
+              >
+                Go To Dashboard
+              </a>
             </nav>
           </div>
         </div>

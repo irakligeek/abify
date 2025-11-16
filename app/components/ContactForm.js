@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { trackFormSubmission } from '../../lib/analytics';
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -37,6 +38,7 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
+        trackFormSubmission('contact_form');
         setSubmitStatus({ type: 'success', message: 'Thank you! Your message has been sent successfully.' });
         reset();
       } else {

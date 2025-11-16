@@ -1,5 +1,7 @@
 'use client';
 
+import { trackCTAClick, trackDemoVideoClick } from '../../lib/analytics';
+
 export default function HeroSection({ setDemoModalOpen }) {
   return (
     <div className="w-full">
@@ -19,6 +21,7 @@ export default function HeroSection({ setDemoModalOpen }) {
                 <div className="flex flex-col items-center gap-2">
                   <a 
                     href="https://dashboard.abify.app/login"
+                    onClick={() => trackCTAClick('hero_get_started')}
                     className="flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-[#4285F4] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#4285F4]/90 transition-colors"
                   >
                     <span className="truncate">Get Started for Free</span>
@@ -27,7 +30,11 @@ export default function HeroSection({ setDemoModalOpen }) {
                 </div>
                 <a 
                   href="#"
-                  onClick={(e) => { e.preventDefault(); setDemoModalOpen(true); }}
+                  onClick={(e) => { 
+                    e.preventDefault(); 
+                    trackDemoVideoClick();
+                    setDemoModalOpen(true); 
+                  }}
                   className="text-[#4285F4] text-base font-medium underline hover:text-[#4285F4]/80 transition-colors sm:mt-[10px]"
                 >
                   Watch a Demo
