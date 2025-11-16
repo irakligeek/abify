@@ -106,7 +106,7 @@ export default function Home() {
                     A/B Test Any Website, Fast, No-Code
                   </h1>
                   <h2 className="text-[#333333]/70 text-base font-normal leading-normal sm:text-lg">
-                    A self-serve, lightweight split testing platform for easy setup and fast results.
+                    A self-serve, lightweight split testing platform to test new ideas quickly.
                   </h2>
                 </div>
                 <div className="flex flex-col items-center gap-2 lg:items-start">
