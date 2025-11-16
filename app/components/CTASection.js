@@ -58,11 +58,11 @@ export default function CTASection() {
             <a 
               href="https://dashboard.abify.app"
               onClick={() => trackCTAClick('main_cta_get_started')}
-              className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[#4285F4] bg-white rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
+              className="inline-flex items-center justify-center px-12 py-6 text-xl font-bold text-[#4285F4] bg-white rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
             >
               Get Started Now
             </a>
-            <p className="text-sm text-white/80 mt-4">
+            <p className="text-sm text-white/80 mt-2">
               No credit card required
             </p>
           </div>
