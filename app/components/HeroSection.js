@@ -1,11 +1,13 @@
 'use client';
 
 import { trackCTAClick, trackDemoVideoClick } from '../../lib/analytics';
+import GridBackground from './GridBackground';
 
 export default function HeroSection({ setDemoModalOpen }) {
   return (
-    <div className="w-full">
-      <div className="max-w-7xl mx-auto px-6 py-4 md:px-10 md:py-6">
+    <div className="w-full relative">
+      <GridBackground />
+      <div className="max-w-7xl mx-auto px-6 py-4 md:px-10 md:py-6 relative">
         <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-20">
           <div className="flex flex-col gap-6 text-center lg:text-left lg:w-1/2 lg:gap-8">
             <div className="flex flex-col gap-4">
@@ -22,7 +24,7 @@ export default function HeroSection({ setDemoModalOpen }) {
                   <a 
                     href="https://dashboard.abify.app/login"
                     onClick={() => trackCTAClick('hero_get_started')}
-                    className="flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-[#4285F4] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#4285F4]/90 transition-colors"
+                    className="relative z-10 flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-[#4285F4] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#4285F4]/90 transition-colors"
                   >
                     <span className="truncate">Get Started for Free</span>
                   </a>
@@ -35,7 +37,7 @@ export default function HeroSection({ setDemoModalOpen }) {
                     trackDemoVideoClick();
                     setDemoModalOpen(true); 
                   }}
-                  className="text-[#4285F4] text-base font-medium underline hover:text-[#4285F4]/80 transition-colors sm:mt-[10px]"
+                  className="relative z-10 text-[#4285F4] text-base font-medium underline hover:text-[#4285F4]/80 transition-colors sm:mt-[10px]"
                 >
                   Watch a Demo
                 </a>
@@ -75,7 +77,7 @@ export default function HeroSection({ setDemoModalOpen }) {
             </div>
           </div>
           <div className="w-full lg:w-1/2">
-            <div className="w-4/5 max-w-[450px] mx-auto aspect-square shadow-[20px_20px_0px_0px_#4285F4,40px_40px_0px_0px_rgb(79,196,126)]">
+            <div className="w-4/5 max-w-[450px] mx-auto aspect-square">
               <img 
                 src="/ab-hero.png" 
                 alt="Abify A/B Testing Platform" 
