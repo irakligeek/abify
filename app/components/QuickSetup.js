@@ -1,6 +1,6 @@
 export default function QuickSetup() {
   return (
-    <div className="bg-gray-50 py-16 md:py-24">
+    <div className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold sm:text-4xl mb-4">Quick Setup</h2>
@@ -169,9 +169,11 @@ export default function QuickSetup() {
         <div className="flex justify-center mt-16">
           <a 
             href="https://dashboard.abify.app/login"
-            className="inline-flex items-center justify-center px-8 py-4 bg-[#4285F4] text-white rounded-lg font-bold text-base hover:bg-[#4285F4]/90 transition-colors shadow-lg text-lg"
+            className="group relative overflow-hidden inline-flex items-center justify-center px-8 py-4 bg-[#4285F4] text-white rounded-lg font-bold text-base hover:bg-[#4285F4]/90 transition-all duration-300 shadow-lg text-lg"
           >
-            Try Abify for Free
+            {/* Animated underline - slides left to right */}
+            <span className="absolute bottom-1 left-0 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-500 ease-out"></span>
+            <span className="relative z-10 group-hover:transform group-hover:-translate-y-0.5 transition-transform duration-300">Try for Free</span>
           </a>
         </div>
       </div>

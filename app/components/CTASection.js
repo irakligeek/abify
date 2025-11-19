@@ -21,9 +21,11 @@ export default function CTASection() {
             <a 
               href="https://dashboard.abify.app"
               onClick={() => trackCTAClick('main_cta_get_started')}
-              className="relative z-10 inline-flex items-center justify-center px-12 py-6 text-xl font-bold text-[#4285F4] bg-white rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
+              className="group relative z-10 overflow-hidden inline-flex items-center justify-center px-12 py-6 text-xl font-bold text-[#4285F4] bg-white rounded-xl hover:bg-gray-100 transition-all duration-300 shadow-lg"
             >
-              Get Started Now
+              {/* Animated underline - slides left to right */}
+              <span className="absolute bottom-2 left-0 h-1 w-0 bg-[#4285F4] group-hover:w-full transition-all duration-500 ease-out"></span>
+              <span className="relative z-10 group-hover:transform group-hover:-translate-y-0.5 transition-transform duration-300">Get Started Now</span>
             </a>
             <p className="text-sm text-white/80 mt-2">
               No credit card required

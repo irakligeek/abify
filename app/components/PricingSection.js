@@ -6,7 +6,7 @@ export default function PricingSection() {
   const [billingPeriod, setBillingPeriod] = useState('yearly');
 
   return (
-    <div id="pricing" className="py-16 md:py-24 bg-gray-50">
+    <div id="pricing" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold sm:text-4xl mb-4">Pay For What Matters</h2>

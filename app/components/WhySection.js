@@ -85,7 +85,7 @@ export default function WhySection() {
   ];
 
   return (
-    <div id="features" className="py-16 md:py-24 bg-white">
+    <div id="features" className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="flex flex-col items-center gap-12">
           <div className="flex flex-col items-center gap-4 text-center">
@@ -96,13 +96,27 @@ export default function WhySection() {
           </div>
           <div className="grid w-full max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, index) => (
-              <div key={index} className="flex items-start gap-3 rounded-lg border border-gray-100 bg-white p-5 shadow-md hover:shadow-xl transition-shadow">
+              <div key={index} className="group relative flex items-start gap-3 rounded-lg border border-gray-100 bg-white p-5 shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden hover:border-[#4fc47e] hover:bg-gradient-to-br hover:from-[#4fc47e]/8 hover:to-[#4285F4]/8">
+                {/* Animated border lines */}
+                <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  {/* Top border */}
+                  <div className="absolute top-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4fc47e] to-[#4285F4] group-hover:w-full transition-all duration-700 delay-0"></div>
+                  {/* Right border */}
+                  <div className="absolute top-0 right-0 w-0.5 h-0 bg-gradient-to-b from-[#4285F4] to-[#4fc47e] group-hover:h-full transition-all duration-700 delay-200"></div>
+                  {/* Bottom border */}
+                  <div className="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-l from-[#4fc47e] to-[#4285F4] group-hover:w-full transition-all duration-700 delay-400"></div>
+                  {/* Left border */}
+                  <div className="absolute bottom-0 left-0 w-0.5 h-0 bg-gradient-to-t from-[#4285F4] to-[#4fc47e] group-hover:h-full transition-all duration-700 delay-600"></div>
+                </div>
+                {/* Content wrapper with higher z-index */}
+                <div className="relative z-10 flex items-start gap-3 w-full">
                 <div className="flex-shrink-0">
                   {feature.icon}
                 </div>
                 <div>
                   <h3 className="font-semibold text-[#333333] mb-1">{feature.title}</h3>
                   <p className="text-sm text-[#333333]/60">{feature.description}</p>
+                </div>
                 </div>
               </div>
             ))}

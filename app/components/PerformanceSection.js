@@ -1,6 +1,13 @@
+'use client';
+
+import { useState } from 'react';
+import AnimatedNumber from './AnimatedNumber';
+
 export default function PerformanceSection() {
+  const [hoveredCard, setHoveredCard] = useState(null);
+
   return (
-    <div className="py-16 md:py-24 bg-white">
+    <div className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold sm:text-4xl mb-4">Lightning-Fast Performance</h2>
@@ -11,11 +18,19 @@ export default function PerformanceSection() {
 
         {/* Performance Highlights - Minimal Side Layout */}
         <div className="grid md:grid-cols-3 gap-6 mb-16 max-w-5xl mx-auto">
-          <div className="flex items-center gap-6 p-6">
+          <div 
+            className="flex items-center gap-6 p-6 rounded-lg cursor-pointer"
+            onMouseEnter={() => setHoveredCard(1)}
+            onMouseLeave={() => setHoveredCard(null)}
+          >
             <div className="flex-shrink-0">
-              <div className="w-20 h-20 rounded-full border-4 border-[#4285F4] flex items-center justify-center">
-                <span className="text-2xl font-black text-[#4285F4]">6.2</span>
-              </div>
+              <AnimatedNumber 
+                targetValue={6.2} 
+                isHovered={hoveredCard === 1} 
+                decimals={1} 
+                className="text-[#4285F4]" 
+                borderColor="#4285F4"
+              />
             </div>
             <div className="flex-1 border-l-2 border-gray-200 pl-6">
               <div className="text-lg font-bold text-[#333333]">KB</div>
@@ -24,11 +39,18 @@ export default function PerformanceSection() {
             </div>
           </div>
           
-          <div className="flex items-center gap-6 p-6">
+          <div 
+            className="flex items-center gap-6 p-6 rounded-lg cursor-pointer"
+            onMouseEnter={() => setHoveredCard(2)}
+            onMouseLeave={() => setHoveredCard(null)}
+          >
             <div className="flex-shrink-0">
-              <div className="w-20 h-20 rounded-full border-4 border-[#4fc47e] flex items-center justify-center">
-                <span className="text-2xl font-black text-[#4fc47e]">20</span>
-              </div>
+              <AnimatedNumber 
+                targetValue={20} 
+                isHovered={hoveredCard === 2} 
+                className="text-[#4fc47e]" 
+                borderColor="#4fc47e"
+              />
             </div>
             <div className="flex-1 border-l-2 border-gray-200 pl-6">
               <div className="text-lg font-bold text-[#333333]">ms</div>
@@ -37,11 +59,18 @@ export default function PerformanceSection() {
             </div>
           </div>
           
-          <div className="flex items-center gap-6 p-6">
+          <div 
+            className="flex items-center gap-6 p-6 rounded-lg cursor-pointer"
+            onMouseEnter={() => setHoveredCard(3)}
+            onMouseLeave={() => setHoveredCard(null)}
+          >
             <div className="flex-shrink-0">
-              <div className="w-20 h-20 rounded-full border-4 border-[#8b5cf6] flex items-center justify-center">
-                <span className="text-2xl font-black text-[#8b5cf6]">80</span>
-              </div>
+              <AnimatedNumber 
+                targetValue={80} 
+                isHovered={hoveredCard === 3} 
+                className="text-[#8b5cf6]" 
+                borderColor="#8b5cf6"
+              />
             </div>
             <div className="flex-1 border-l-2 border-gray-200 pl-6">
               <div className="text-lg font-bold text-[#333333]">ms</div>
