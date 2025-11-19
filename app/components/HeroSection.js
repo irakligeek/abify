@@ -10,7 +10,7 @@ export default function HeroSection({ setDemoModalOpen }) {
           <div className="flex flex-col gap-6 text-center lg:text-left lg:w-1/2 lg:gap-8">
             <div className="flex flex-col gap-4">
               <h1 className="text-[#333333] text-4xl font-black leading-tight sm:text-5xl">
-                A/B Test Any Website, <span className="inline-block text-white py-2 -skew-x-12 transform" style={{padding: '0 15px', backgroundColor: 'rgb(79, 196, 126)'}}>Fast</span>, No-Code
+                A/B Test Any Website, Fast, No-Code
               </h1>
               <h2 className="text-[#333333]/70 text-base font-normal leading-normal sm:text-lg">
                 A self-serve, lightweight split testing platform to test new ideas quickly.
@@ -75,10 +75,12 @@ export default function HeroSection({ setDemoModalOpen }) {
             </div>
           </div>
           <div className="w-full lg:w-1/2">
-            <div className="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center">
-              <div className="text-white text-6xl font-bold opacity-50">
-                A/B
-              </div>
+            <div className="w-4/5 max-w-[450px] mx-auto aspect-square shadow-[20px_20px_0px_0px_#4285F4,40px_40px_0px_0px_rgb(79,196,126)]">
+              <img 
+                src="/ab-hero.png" 
+                alt="Abify A/B Testing Platform" 
+                className="w-full h-full object-cover transform scale-x-[-1]"
+              />
             </div>
           </div>
         </div>

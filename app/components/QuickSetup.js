@@ -12,9 +12,13 @@ export default function QuickSetup() {
         {/* Easy Setup */}
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
           <div className="lg:w-1/2">
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="aspect-video bg-gradient-to-br from-green-100 to-blue-100 rounded-lg flex items-center justify-center">
-                <span className="text-gray-400 text-lg font-medium">Installation Illustration</span>
+            <div className="rounded-xl p-8">
+              <div className="aspect-video rounded-lg overflow-hidden">
+                <img 
+                  src="/setup.png" 
+                  alt="Installation Setup Process" 
+                  className="w-full h-full object-cover transform scale-x-[-1]"
+                />
               </div>
             </div>
           </div>
@@ -60,9 +64,13 @@ export default function QuickSetup() {
         {/* No-Code Visual Editor */}
         <div className="flex flex-col lg:flex-row-reverse items-center gap-12 mb-16">
           <div className="lg:w-1/2">
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center">
-                <span className="text-gray-400 text-lg font-medium">Visual Editor Screenshot</span>
+            <div className="rounded-xl">
+              <div className="aspect-video rounded-lg overflow-hidden">
+                <img 
+                  src="/visual-editor-illustration.png" 
+                  alt="Visual Editor Screenshot" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -99,9 +107,13 @@ export default function QuickSetup() {
         {/* Platform Integrations */}
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="aspect-video bg-gradient-to-br from-purple-100 to-pink-100 rounded-lg flex items-center justify-center">
-                <span className="text-gray-400 text-lg font-medium">Platform Integration Logos</span>
+            <div className="rounded-xl p-8">
+              <div className="aspect-video rounded-lg overflow-hidden">
+                <img 
+                  src="/compatibility.png" 
+                  alt="Platform Integration Logos" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
