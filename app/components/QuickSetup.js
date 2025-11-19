@@ -16,7 +16,7 @@ export default function QuickSetup() {
               <div className="aspect-video rounded-lg overflow-hidden">
                 <img 
                   src="/setup.png" 
-                  alt="Installation Setup Process" 
+                  alt="Simple 5-minute A/B testing setup process showing script installation and configuration steps for website optimization" 
                   className="w-full h-full object-cover transform scale-x-[-1]"
                 />
               </div>
@@ -68,7 +68,7 @@ export default function QuickSetup() {
               <div className="aspect-video rounded-lg overflow-hidden">
                 <img 
                   src="/visual-editor-illustration.png" 
-                  alt="Visual Editor Screenshot" 
+                  alt="No-code visual editor interface for creating A/B test variants with drag-and-drop functionality and CSS/JS editing capabilities" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -111,7 +111,7 @@ export default function QuickSetup() {
               <div className="aspect-video rounded-lg overflow-hidden">
                 <img 
                   src="/compatibility.png" 
-                  alt="Platform Integration Logos" 
+                  alt="Abify A/B testing platform compatibility with WordPress, Shopify, Webflow, Google Analytics and other popular website platforms" 
                   className="w-full h-full object-cover"
                 />
               </div>
