@@ -12,13 +12,15 @@ export default function Header({ setDemoModalOpen }) {
       <header className="w-full bg-white border-b border-solid border-gray-200/80">
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-4">
           <div className="flex items-center justify-between whitespace-nowrap">
+            {/* Logo - Left */}
             <div className="flex items-center gap-2">
               <a href="/" className="flex items-center gap-2">
                 <img src="/logo.png" alt="Abify Logo" className="h-7 w-auto" />
               </a>
             </div>
             
-            <div className="hidden md:flex flex-1 justify-end items-center gap-8">
+            {/* Navigation - Center */}
+            <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
               <nav className="flex items-center gap-9">
                 <a className="text-[#333333]/80 text-sm font-medium leading-normal hover:text-[#4285F4] transition-colors" href="/">
                   Home
@@ -33,15 +35,17 @@ export default function Header({ setDemoModalOpen }) {
                   Contact Us
                 </a>
               </nav>
-              <div className="flex items-center gap-4">
-                <a 
-                  href="https://dashboard.abify.app/login"
-                  onClick={() => trackCTAClick('header_dashboard')}
-                  className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#4285F4] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#4285F4]/90 transition-colors"
-                >
-                  <span className="truncate">Go To Dashboard</span>
-                </a>
-              </div>
+            </div>
+            
+            {/* Dashboard Button - Right */}
+            <div className="hidden md:flex items-center gap-4">
+              <a 
+                href="https://dashboard.abify.app/login"
+                onClick={() => trackCTAClick('header_dashboard')}
+                className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#4285F4] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#4285F4]/90 transition-colors"
+              >
+                <span className="truncate">Go To Dashboard</span>
+              </a>
             </div>
             
             <div className="md:hidden">

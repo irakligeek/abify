@@ -1,4 +1,17 @@
+import { useState } from 'react';
+import SetupStep from './SetupStep';
+import LogoSlideshow from './LogoSlideshow';
+
 export default function QuickSetup() {
+  const [clickedFeatures, setClickedFeatures] = useState([]);
+
+  const toggleFeature = (index) => {
+    setClickedFeatures(prev => 
+      prev.includes(index) 
+        ? prev.filter(i => i !== index)
+        : [...prev, index]
+    );
+  };
   return (
     <div className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
@@ -29,34 +42,22 @@ export default function QuickSetup() {
             <p className="text-[#333333]/70 mb-6 text-lg leading-relaxed">
               Install our lightweight script and start testing immediately. Our setup process is designed to get you running in under 5 minutes.
             </p>
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="bg-[#4fc47e] text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold text-sm">
-                  1
-                </div>
-                <div>
-                  <div className="font-semibold text-[#333333]">Add Script Tag</div>
-                  <div className="text-sm text-[#333333]/70">Add our tiny pixel script to your website.</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="bg-[#4fc47e] text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold text-sm">
-                  2
-                </div>
-                <div>
-                  <div className="font-semibold text-[#333333]">Configure Settings</div>
-                  <div className="text-sm text-[#333333]/70">Set up your first test in minutes</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="bg-[#4fc47e] text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold text-sm">
-                  3
-                </div>
-                <div>
-                  <div className="font-semibold text-[#333333]">Go Live</div>
-                  <div className="text-sm text-[#333333]/70">Schedule your test, watch user events in real time</div>
-                </div>
-              </div>
+            <div className="space-y-2">
+              <SetupStep 
+                stepNumber="1"
+                title="Add Script Tag"
+                description="Add our tiny pixel script to your website."
+              />
+              <SetupStep 
+                stepNumber="2"
+                title="Configure Settings"
+                description="Set up your first test in minutes"
+              />
+              <SetupStep 
+                stepNumber="3"
+                title="Go Live"
+                description="Schedule your test, watch user events in real time"
+              />
             </div>
           </div>
         </div>
@@ -81,24 +82,57 @@ export default function QuickSetup() {
             <p className="text-[#333333]/70 mb-6 text-lg leading-relaxed">
               Create variants in seconds using our intuitive visual editor. Edit or add new elements to your page. For advanced users, we also provide manual CSS/JS editors for full control.
             </p>
-            <div className="space-y-3">
-              <div className="flex items-center gap-3">
-                <svg className="w-5 h-5 text-[#4fc47e]" fill="currentColor" viewBox="0 0 20 20">
+            <div className="space-y-2">
+              <div 
+                className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all duration-300 border ${
+                  clickedFeatures.includes(0) 
+                    ? 'bg-white shadow-md border-transparent' 
+                    : 'border-transparent hover:border-gray-200 hover:bg-white/60'
+                }`}
+                onClick={() => toggleFeature(0)}
+              >
+                <svg className={`w-5 h-5 transition-colors duration-300 ${
+                  clickedFeatures.includes(0) ? 'text-[#4fc47e]' : 'text-[#161618]'
+                }`} fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                 </svg>
-                <span className="text-[#333333]/80">Create variants in under 5 minutes</span>
+                <span className={`transition-colors duration-300 ${
+                  clickedFeatures.includes(0) ? 'text-green-600' : 'text-[#333333]/80'
+                }`}>Create variants in under 5 minutes</span>
               </div>
-              <div className="flex items-center gap-3">
-                <svg className="w-5 h-5 text-[#4fc47e]" fill="currentColor" viewBox="0 0 20 20">
+              <div 
+                className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all duration-300 border ${
+                  clickedFeatures.includes(1) 
+                    ? 'bg-white shadow-md border-transparent' 
+                    : 'border-transparent hover:border-gray-200 hover:bg-white/60'
+                }`}
+                onClick={() => toggleFeature(1)}
+              >
+                <svg className={`w-5 h-5 transition-colors duration-300 ${
+                  clickedFeatures.includes(1) ? 'text-[#4fc47e]' : 'text-[#161618]'
+                }`} fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                 </svg>
-                <span className="text-[#333333]/80">No coding skills required</span>
+                <span className={`transition-colors duration-300 ${
+                  clickedFeatures.includes(1) ? 'text-green-600' : 'text-[#333333]/80'
+                }`}>No coding skills required</span>
               </div>
-              <div className="flex items-center gap-3">
-                <svg className="w-5 h-5 text-[#4fc47e]" fill="currentColor" viewBox="0 0 20 20">
+              <div 
+                className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all duration-300 border ${
+                  clickedFeatures.includes(2) 
+                    ? 'bg-white shadow-md border-transparent' 
+                    : 'border-transparent hover:border-gray-200 hover:bg-white/60'
+                }`}
+                onClick={() => toggleFeature(2)}
+              >
+                <svg className={`w-5 h-5 transition-colors duration-300 ${
+                  clickedFeatures.includes(2) ? 'text-[#4fc47e]' : 'text-[#161618]'
+                }`} fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                 </svg>
-                <span className="text-[#333333]/80">Advanced CSS/JS editors available</span>
+                <span className={`transition-colors duration-300 ${
+                  clickedFeatures.includes(2) ? 'text-green-600' : 'text-[#333333]/80'
+                }`}>Advanced CSS/JS editors available</span>
               </div>
             </div>
           </div>
@@ -124,44 +158,7 @@ export default function QuickSetup() {
             <p className="text-[#333333]/70 mb-6 text-lg leading-relaxed">
               Seamlessly integrates with all major platforms and tools you already use. No complex configurations or compatibility issues.
             </p>
-            <div className="grid grid-cols-2 gap-4 mb-6">
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-[#4fc47e]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                </svg>
-                <span className="text-[#333333]/80">WordPress</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-[#4fc47e]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                </svg>
-                <span className="text-[#333333]/80">Shopify</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-[#4fc47e]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                </svg>
-                <span className="text-[#333333]/80">Webflow</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-[#4fc47e]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                </svg>
-                <span className="text-[#333333]/80">Google Analytics</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-[#4fc47e]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                </svg>
-                <span className="text-[#333333]/80">Squarespace</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-[#4fc47e]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                </svg>
-                <span className="text-[#333333]/80">And many more...</span>
-              </div>
-            </div>
+            <LogoSlideshow />
           </div>
         </div>
         
