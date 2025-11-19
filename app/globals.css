@@ -87,3 +87,56 @@ body {
 .animate-slide-loop {
   animation: slide-loop 25s linear infinite;
 }
+
+/* Grid trail effect - Direction Aware */
+.grid-trail-container {
+  --trail-opacity-1: 0.6;
+  --trail-opacity-2: 0.3;
+  --trail-opacity-3: 0.1;
+  --trail-x1: 50px;
+  --trail-y1: 0px;
+  --trail-x2: 100px;
+  --trail-y2: 0px;
+}
+
+.grid-cell {
+  position: relative;
+  transition: background-color 0.2s ease-out;
+}
+
+.grid-cell.trail-active::before,
+.grid-cell.trail-active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  pointer-events: none;
+  animation: trail-fade 1.5s ease-out forwards;
+}
+
+.grid-cell.trail-active::before {
+  transform: translate(var(--trail-x1), var(--trail-y1));
+  opacity: var(--trail-opacity-2);
+  animation-delay: 0.05s;
+}
+
+.grid-cell.trail-active::after {
+  transform: translate(var(--trail-x2), var(--trail-y2));
+  opacity: var(--trail-opacity-3);
+  animation-delay: 0.1s;
+}
+
+@keyframes trail-fade {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: inherit;
+  }
+  100% {
+    opacity: 0;
+  }
+}
