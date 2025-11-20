@@ -172,6 +172,26 @@ export default function RootLayout({ children }) {
             });
           `}
         </Script>
+        
+        {/* Abify A/B Testing Script */}
+        <Script id="abify-flicker-control" strategy="beforeInteractive">
+          {`
+            document.documentElement.style.opacity="0";
+            setTimeout(()=>{
+              if("0"===document.documentElement.style.opacity){
+                document.documentElement.style.transition="opacity 0.2s ease-in-out";
+                document.documentElement.style.opacity="1";
+                setTimeout(()=>document.documentElement.style.transition="",200);
+              }
+            },2e3);
+          `}
+        </Script>
+        <Script
+          src="https://cdn.abify.app/scripts/dev/abf.js"
+          data-site-id="site-f43dAjsoa-NuIj8"
+          strategy="beforeInteractive"
+        />
+        
         {children}
       </body>
     </html>
