@@ -80,11 +80,11 @@ export const metadata = {
     ],
   },
   manifest: '/site.webmanifest',
-  verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
-  },
+  // verification: {
+  //   google: "your-google-verification-code",
+  //   yandex: "your-yandex-verification-code",
+  //   yahoo: "your-yahoo-verification-code",
+  // },
   category: "technology",
 };
 
