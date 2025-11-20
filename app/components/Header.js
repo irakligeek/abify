@@ -42,7 +42,7 @@ export default function Header({ setDemoModalOpen }) {
               <a 
                 href="https://dashboard.abify.app/login"
                 onClick={() => trackCTAClick('header_dashboard')}
-                className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#4285F4] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#4285F4]/90 transition-colors"
+                className="abify-cta abify-cta-header flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#4285F4] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#4285F4]/90 transition-colors"
               >
                 <span className="truncate">Go To Dashboard</span>
               </a>
@@ -71,7 +71,7 @@ export default function Header({ setDemoModalOpen }) {
               <a 
                 href="https://dashboard.abify.app/login" 
                 onClick={() => trackCTAClick('mobile_header_dashboard')}
-                className="w-full text-left text-[#4285F4] text-sm font-bold"
+                className="abify-cta abify-cta-header-mobile w-full text-left text-[#4285F4] text-sm font-bold"
               >
                 Go To Dashboard
               </a>
