@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Abify - A/B Testing Software | Conversion Rate Optimization Platform",
-  description: "Professional A/B testing software for conversion optimization. Run split testing campaigns with our no-code A/B testing marketing platform. Boost conversion rates with data-driven test alternatives.",
+  title: "Abify - A/B Testing Tool | Conversion Rate Optimization Platform",
+  description: "Professional A/B testing platform for conversion optimization. Run split testing campaigns with our no-code A/B testing marketing platform. Boost conversion rates with data-driven test alternatives.",
   keywords: [
     "a/b testing",
     "A/B split testing", 
@@ -30,8 +30,8 @@ export const metadata = {
     canonical: "https://abify.app",
   },
   openGraph: {
-    title: "Abify - Split Testing Platform | Conversion Optimization Software",
-    description: "Professional A/B testing marketing platform for conversion rate optimization. Run A/B tests with our advanced split testing software.",
+    title: "Abify - Split Testing Platform | Conversion Optimization Platform",
+    description: "Professional A/B testing marketing platform for conversion rate optimization. Run A/B tests with our advanced split testing tool.",
     url: "https://abify.app",
     type: "website",
     locale: "en_US",

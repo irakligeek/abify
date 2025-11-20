@@ -91,7 +91,7 @@ export default function WhySection() {
           <div className="flex flex-col items-center gap-4 text-center">
             <h2 className="text-3xl font-bold sm:text-4xl">Why Abify</h2>
             <p className="max-w-xl text-lg text-[#333333]/70">
-              Need fast A/B testing software that takes minutes to set up and won't slow your site? Abify gives you a lightweight conversion rate optimization platform for instant split testing without the bloat.
+              Need fast A/B testing tool that takes minutes to set up and won't slow your site? Abify gives you a lightweight conversion rate optimization platform for instant split testing without the bloat.
             </p>
           </div>
           <div className="grid w-full max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
