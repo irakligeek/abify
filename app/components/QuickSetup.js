@@ -88,12 +88,12 @@ export default function QuickSetup() {
                 onClick={() => toggleFeature(0)}
               >
                 <svg className={`w-5 h-5 transition-colors duration-300 ${
-                  clickedFeatures.includes(0) ? 'text-[#4fc47e]' : 'text-[#161618]'
+                  clickedFeatures.includes(0) ? 'text-[#4285F4]' : 'text-[#161618]'
                 }`} fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                 </svg>
                 <span className={`transition-colors duration-300 ${
-                  clickedFeatures.includes(0) ? 'text-green-600' : 'text-[#333333]/80'
+                  clickedFeatures.includes(0) ? 'text-[#4285F4]' : 'text-[#333333]/80'
                 }`}>Create variants in under 5 minutes</span>
               </div>
               <div 
@@ -105,12 +105,12 @@ export default function QuickSetup() {
                 onClick={() => toggleFeature(1)}
               >
                 <svg className={`w-5 h-5 transition-colors duration-300 ${
-                  clickedFeatures.includes(1) ? 'text-[#4fc47e]' : 'text-[#161618]'
+                  clickedFeatures.includes(1) ? 'text-[#4285F4]' : 'text-[#161618]'
                 }`} fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                 </svg>
                 <span className={`transition-colors duration-300 ${
-                  clickedFeatures.includes(1) ? 'text-green-600' : 'text-[#333333]/80'
+                  clickedFeatures.includes(1) ? 'text-[#4285F4]' : 'text-[#333333]/80'
                 }`}>No coding skills required</span>
               </div>
               <div 
@@ -122,12 +122,12 @@ export default function QuickSetup() {
                 onClick={() => toggleFeature(2)}
               >
                 <svg className={`w-5 h-5 transition-colors duration-300 ${
-                  clickedFeatures.includes(2) ? 'text-[#4fc47e]' : 'text-[#161618]'
+                  clickedFeatures.includes(2) ? 'text-[#4285F4]' : 'text-[#161618]'
                 }`} fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                 </svg>
                 <span className={`transition-colors duration-300 ${
-                  clickedFeatures.includes(2) ? 'text-green-600' : 'text-[#333333]/80'
+                  clickedFeatures.includes(2) ? 'text-[#4285F4]' : 'text-[#333333]/80'
                 }`}>Advanced CSS/JS editors available</span>
               </div>
             </div>
