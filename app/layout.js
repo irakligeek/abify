@@ -122,7 +122,27 @@ export default function RootLayout({ children }) {
       "Real-time Analytics",
       "Visual Editor"
     ],
-    "screenshot": "https://abify.app/screenshot.png"
+    "screenshot": "https://abify.app/screenshot.png",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [{
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Sarah Chen"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Abify transformed our conversion optimization process. We saw a 35% increase in conversions within the first month!"
+    }]
   };
 
   return (

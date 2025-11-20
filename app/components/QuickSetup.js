@@ -30,6 +30,7 @@ export default function QuickSetup() {
                 src="/setup.png" 
                 alt="Simple 5-minute A/B testing setup process showing script installation and configuration steps for website optimization" 
                 className="w-full h-full object-cover transform scale-x-[-1] max-w-md"
+                loading="lazy"
               />
             </div>
           </div>
@@ -68,6 +69,7 @@ export default function QuickSetup() {
                 src="/visual-editor-illustration.png" 
                 alt="No-code visual editor interface for creating A/B test variants with drag-and-drop functionality and CSS/JS editing capabilities" 
                 className="w-full h-full object-cover  max-w-md"
+                loading="lazy"
               />
             </div>
           </div>
@@ -142,6 +144,7 @@ export default function QuickSetup() {
                 src="/compatibility.png" 
                 alt="Abify A/B testing platform compatibility with WordPress, Shopify, Webflow, Google Analytics and other popular website platforms" 
                 className="w-full h-full object-cover  max-w-md"
+                loading="lazy"
               />
             </div>
           </div>

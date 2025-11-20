@@ -7,6 +7,7 @@ export default function DashboardPreview() {
 
   return (
     <div className="max-w-7xl mx-auto px-6 md:px-10 py-8 md:py-12">
+      <h2 className="sr-only">Dashboard Preview</h2>
       <div className="flex flex-col items-center gap-6 md:gap-8">
         <div className="w-full">
           <div className="flex justify-center">
