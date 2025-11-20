@@ -25,11 +25,11 @@ export default function QuickSetup() {
         {/* Easy Setup */}
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
           <div className="lg:w-1/2">
-            <div className="aspect-video rounded-lg overflow-hidden">
+            <div className="overflow-hidden">
               <img 
                 src="/setup.png" 
                 alt="Simple 5-minute A/B testing setup process showing script installation and configuration steps for website optimization" 
-                className="w-full h-full object-cover transform scale-x-[-1]"
+                className="w-full h-full object-cover transform scale-x-[-1] max-w-md"
               />
             </div>
           </div>
@@ -63,11 +63,11 @@ export default function QuickSetup() {
         {/* No-Code Visual Editor */}
         <div className="flex flex-col lg:flex-row-reverse items-center gap-12 mb-16">
           <div className="lg:w-1/2">
-            <div className="aspect-video rounded-lg overflow-hidden">
+            <div className="overflow-hidden">
               <img 
                 src="/visual-editor-illustration.png" 
                 alt="No-code visual editor interface for creating A/B test variants with drag-and-drop functionality and CSS/JS editing capabilities" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover  max-w-md"
               />
             </div>
           </div>
@@ -137,11 +137,11 @@ export default function QuickSetup() {
         {/* Platform Integrations */}
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-7/12">
-            <div className="aspect-video rounded-lg overflow-hidden">
+            <div className="overflow-hidden">
               <img 
                 src="/compatibility.png" 
                 alt="Abify A/B testing platform compatibility with WordPress, Shopify, Webflow, Google Analytics and other popular website platforms" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover  max-w-md"
               />
             </div>
           </div>
