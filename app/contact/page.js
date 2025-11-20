@@ -6,7 +6,7 @@ import CTASection from '../components/CTASection';
 export const metadata = {
   title: "Contact Abify - Get A/B Testing Support | Conversion Optimization Help",
   description: "Contact our A/B testing experts for conversion optimization support. Get help with split testing, conversion rate optimization, and marketing test alternatives.",
-  keywords: "contact abify, a/b testing support, conversion optimization help, split testing assistance, conversion rate optimization agency contact",
+  keywords: "contact abify, a/b testing support, conversion optimization help, split testing assistance, conversion rate optimization service contact",
   openGraph: {
     title: "Contact Abify - A/B Testing Support & Conversion Optimization Help",
     description: "Get expert help with A/B testing and conversion optimization. Contact our team for split testing support and marketing advice.",

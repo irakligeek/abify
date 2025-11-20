@@ -8,9 +8,12 @@ export default function Layout({ children }) {
   const [demoModalOpen, setDemoModalOpen] = useState(false);
 
   // Clone children and pass setDemoModalOpen to HeroSection
-  const childrenWithProps = React.Children.map(children, (child) => {
-    if (React.isValidElement(child) && child.type.name === 'HeroSection') {
-      return React.cloneElement(child, { setDemoModalOpen });
+  const childrenWithProps = React.Children.map(children, (child, index) => {
+    if (React.isValidElement(child)) {
+      // Pass setDemoModalOpen to the first child (HeroSection) or any child with displayName 'HeroSection'
+      if (index === 0 || child.type?.displayName === 'HeroSection') {
+        return React.cloneElement(child, { setDemoModalOpen });
+      }
     }
     return child;
   });

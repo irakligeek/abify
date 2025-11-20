@@ -19,7 +19,7 @@ export const metadata = {
     "A/B tests",
     "conversion optimization",
     "conversion rate optimization",
-    "conversion rate optimization agency",
+    "conversion rate optimization service",
     "split testing",
     "test alternatives"
   ].join(", "),
@@ -30,7 +30,7 @@ export const metadata = {
     canonical: "https://abify.app",
   },
   openGraph: {
-    title: "Abify - Split Testing Platform | Conversion Optimization Platform",
+    title: "Abify - Split Testing & Conversion Optimization Platform",
     description: "Professional A/B testing marketing platform for conversion rate optimization. Run A/B tests with our advanced split testing tool.",
     url: "https://abify.app",
     type: "website",
@@ -49,7 +49,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@abifyapp",
     creator: "@abifyapp",
-    title: "Abify - A/B Tests Platform | Conversion Rate Optimization Agency",
+    title: "Abify - A/B Testing & Conversion Rate Optimization",
     description: "Run A/B tests and explore test alternatives with our conversion optimization platform. Professional A/B testing for marketing teams.",
     images: ["https://abify.app/og-image.png"],
   },

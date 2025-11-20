@@ -61,3 +61,6 @@ export default function HeroSection({ setDemoModalOpen }) {
     </div>
   );
 }
+
+// Add displayName for reliable component identification
+HeroSection.displayName = 'HeroSection';
