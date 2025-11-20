@@ -7,10 +7,10 @@ export default function HeroSection({ setDemoModalOpen }) {
   return (
     <div className="w-full relative">
       <GridBackground />
-      <div className="max-w-7xl mx-auto px-6 pt-24 pb-4 md:px-10 md:py-6 relative">
+      <div className="max-w-7xl mx-auto px-6 pt-24 pb-4 lg:px-10 lg:py-6 relative">
         <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-20">
           <div className="flex flex-col gap-6 text-center lg:text-left lg:w-1/2 lg:gap-8 relative z-10">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 max-w-[600px] mx-auto lg:max-w-none lg:mx-0">
               <h1 className="abify-hero-headline relative z-10 text-[#333333] text-4xl font-black leading-tight sm:text-5xl">
                 A/B Test Any Website, Fast, No-Code
               </h1>
