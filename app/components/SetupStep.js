@@ -11,8 +11,8 @@ export default function SetupStep({ stepNumber, title, description, isCompleted 
 
   return (
     <div 
-      className={`flex items-center gap-4 p-4 rounded-lg cursor-pointer transition-all duration-300 border border-transparent hover:border-gray-200 hover:bg-white/80 ${
-        completed ? 'bg-white shadow-md border-gray-300' : 'hover:bg-white/40'
+      className={`flex items-center gap-4 p-4 rounded-lg cursor-pointer transition-all duration-300 border-b border-transparent hover:border-b-gray-200 hover:bg-white/80 ${
+        completed ? 'bg-white shadow-md border-b-gray-300' : 'hover:bg-white/40'
       }`}
       onClick={handleClick}
     >

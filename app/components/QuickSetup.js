@@ -25,14 +25,12 @@ export default function QuickSetup() {
         {/* Easy Setup */}
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
           <div className="lg:w-1/2">
-            <div className="rounded-xl p-8">
-              <div className="aspect-video rounded-lg overflow-hidden">
-                <img 
-                  src="/setup.png" 
-                  alt="Simple 5-minute A/B testing setup process showing script installation and configuration steps for website optimization" 
-                  className="w-full h-full object-cover transform scale-x-[-1]"
-                />
-              </div>
+            <div className="aspect-video rounded-lg overflow-hidden">
+              <img 
+                src="/setup.png" 
+                alt="Simple 5-minute A/B testing setup process showing script installation and configuration steps for website optimization" 
+                className="w-full h-full object-cover transform scale-x-[-1]"
+              />
             </div>
           </div>
           <div className="lg:w-1/2">
@@ -65,14 +63,12 @@ export default function QuickSetup() {
         {/* No-Code Visual Editor */}
         <div className="flex flex-col lg:flex-row-reverse items-center gap-12 mb-16">
           <div className="lg:w-1/2">
-            <div className="rounded-xl">
-              <div className="aspect-video rounded-lg overflow-hidden">
-                <img 
-                  src="/visual-editor-illustration.png" 
-                  alt="No-code visual editor interface for creating A/B test variants with drag-and-drop functionality and CSS/JS editing capabilities" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <div className="aspect-video rounded-lg overflow-hidden">
+              <img 
+                src="/visual-editor-illustration.png" 
+                alt="No-code visual editor interface for creating A/B test variants with drag-and-drop functionality and CSS/JS editing capabilities" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           <div className="lg:w-1/2">
@@ -84,10 +80,10 @@ export default function QuickSetup() {
             </p>
             <div className="space-y-2">
               <div 
-                className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all duration-300 border ${
+                className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all duration-300 border-b ${
                   clickedFeatures.includes(0) 
-                    ? 'bg-white shadow-md border-transparent' 
-                    : 'border-transparent hover:border-gray-200 hover:bg-white/60'
+                    ? 'bg-white shadow-md border-b-transparent' 
+                    : 'border-b-transparent hover:border-b-gray-200 hover:bg-white/60'
                 }`}
                 onClick={() => toggleFeature(0)}
               >
@@ -101,10 +97,10 @@ export default function QuickSetup() {
                 }`}>Create variants in under 5 minutes</span>
               </div>
               <div 
-                className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all duration-300 border ${
+                className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all duration-300 border-b ${
                   clickedFeatures.includes(1) 
-                    ? 'bg-white shadow-md border-transparent' 
-                    : 'border-transparent hover:border-gray-200 hover:bg-white/60'
+                    ? 'bg-white shadow-md border-b-transparent' 
+                    : 'border-b-transparent hover:border-b-gray-200 hover:bg-white/60'
                 }`}
                 onClick={() => toggleFeature(1)}
               >
@@ -118,10 +114,10 @@ export default function QuickSetup() {
                 }`}>No coding skills required</span>
               </div>
               <div 
-                className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all duration-300 border ${
+                className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all duration-300 border-b ${
                   clickedFeatures.includes(2) 
-                    ? 'bg-white shadow-md border-transparent' 
-                    : 'border-transparent hover:border-gray-200 hover:bg-white/60'
+                    ? 'bg-white shadow-md border-b-transparent' 
+                    : 'border-b-transparent hover:border-b-gray-200 hover:bg-white/60'
                 }`}
                 onClick={() => toggleFeature(2)}
               >
@@ -140,18 +136,16 @@ export default function QuickSetup() {
 
         {/* Platform Integrations */}
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="lg:w-1/2">
-            <div className="rounded-xl p-8">
-              <div className="aspect-video rounded-lg overflow-hidden">
-                <img 
-                  src="/compatibility.png" 
-                  alt="Abify A/B testing platform compatibility with WordPress, Shopify, Webflow, Google Analytics and other popular website platforms" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
+          <div className="lg:w-7/12">
+            <div className="aspect-video rounded-lg overflow-hidden">
+              <img 
+                src="/compatibility.png" 
+                alt="Abify A/B testing platform compatibility with WordPress, Shopify, Webflow, Google Analytics and other popular website platforms" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
-          <div className="lg:w-1/2">
+          <div className="lg:w-5/12">
             <h3 className="text-2xl font-bold text-[#333333] mb-4">
               Works Everywhere
             </h3>
@@ -166,11 +160,11 @@ export default function QuickSetup() {
         <div className="flex justify-center mt-16">
           <a 
             href="https://dashboard.abify.app/login"
-            className="group relative overflow-hidden inline-flex items-center justify-center px-8 py-4 bg-[#4285F4] text-white rounded-lg font-bold text-base hover:bg-[#4285F4]/90 transition-all duration-300 shadow-lg text-lg"
+            className="abify-cta abify-cta-quicksetup group relative overflow-hidden inline-flex items-center justify-center px-8 py-4 bg-[#4285F4] text-white rounded-lg font-bold text-base hover:bg-[#4285F4]/90 transition-all duration-300 shadow-lg"
           >
             {/* Animated underline - slides left to right */}
             <span className="absolute bottom-1 left-0 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-500 ease-out"></span>
-            <span className="relative z-10 group-hover:transform group-hover:-translate-y-0.5 transition-transform duration-300">Try for Free</span>
+            <span className="relative z-10 group-hover:transform group-hover:-translate-y-0.5 transition-transform duration-300">Start Testing</span>
           </a>
         </div>
       </div>
