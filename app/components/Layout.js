@@ -38,6 +38,8 @@ export default function Layout({ children }) {
                 src="https://www.loom.com/embed/7635ef5a78734c55985c08405fa60a23?hideEmbedTopBar=true" 
                 style={{border: 'none'}}
                 allowFullScreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                sandbox="allow-scripts allow-same-origin allow-presentation"
                 className="absolute top-0 left-0 w-full h-full"
                 title="Abify Demo Video"
               />
