@@ -26,8 +26,6 @@ export default function HeroSection({ setDemoModalOpen }) {
                     onClick={() => trackCTAClick('hero_get_started')}
                     className="abify-cta abify-cta-hero group relative overflow-hidden flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center rounded-lg h-12 px-5 bg-[#4285F4] text-white text-base font-bold leading-normal tracking-[0.015em] transition-all duration-300"
                   >
-                    {/* Animated underline - slides left to right */}
-                    <span className="absolute bottom-1 left-0 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-500 ease-out"></span>
                     <span className="truncate relative z-10 group-hover:transform group-hover:-translate-y-0.5 transition-transform duration-300">Get Started for Free</span>
                   </a>
                   <p className="text-xs text-[#333333]/60 text-center">No Credit Card Required</p>

@@ -165,8 +165,6 @@ export default function QuickSetup() {
             href="https://dashboard.abify.app/login"
             className="abify-cta abify-cta-quicksetup group relative overflow-hidden inline-flex items-center justify-center px-8 py-4 bg-[#4285F4] text-white rounded-lg font-bold text-base hover:bg-[#4285F4]/90 transition-all duration-300 shadow-lg"
           >
-            {/* Animated underline - slides left to right */}
-            <span className="absolute bottom-1 left-0 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-500 ease-out"></span>
             <span className="relative z-10 group-hover:transform group-hover:-translate-y-0.5 transition-transform duration-300">Start Testing</span>
           </a>
         </div>
