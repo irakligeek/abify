@@ -52,7 +52,7 @@ export default function HeroSection({ setDemoModalOpen }) {
               <img 
                 src="/ab-hero.png" 
                 alt="Abify A/B testing platform dashboard showing conversion optimization tools and split testing interface for websites" 
-                className="w-full h-full object-cover transform scale-x-[-1]"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
