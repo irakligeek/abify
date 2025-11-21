@@ -149,6 +149,26 @@ export default function RootLayout({ children }) {
               page_title: document.title,
               page_location: window.location.href,
             });
+            gtag('config', 'AW-17597821273');
+          `}
+        </Script>
+        
+        {/* Google Ads Conversion Tracking */}
+        <Script id="google-ads-conversion" strategy="afterInteractive">
+          {`
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                  'send_to': 'AW-17597821273/4kEnCPS3hqEbENnipcdB',
+                  'event_callback': callback
+              });
+              return false;
+            }
+            window.gtag_report_conversion = gtag_report_conversion;
           `}
         </Script>
         

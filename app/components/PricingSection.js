@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { trackCTAClick } from '../../lib/analytics';
 
 export default function PricingSection() {
   const [billingPeriod, setBillingPeriod] = useState('yearly');
@@ -54,7 +55,11 @@ export default function PricingSection() {
                 <span className="text-5xl font-bold text-[#333333]">$0</span>
                 <span className="text-[#333333]/60 ml-2">Per month</span>
               </div>
-              <a href="https://dashboard.abify.app/" className="block w-full py-3 px-6 bg-[#4285F4] text-white rounded-lg font-semibold hover:bg-[#4285F4]/90 transition-colors text-center">
+              <a 
+                href="https://dashboard.abify.app/" 
+                onClick={() => trackCTAClick('pricing_free_get_started')}
+                className="block w-full py-3 px-6 bg-[#4285F4] text-white rounded-lg font-semibold hover:bg-[#4285F4]/90 transition-colors text-center"
+              >
                 Get Started
               </a>
               <div className="mt-8 space-y-3">
@@ -137,7 +142,11 @@ export default function PricingSection() {
                   Per month{billingPeriod === 'yearly' && ', billed annually'}
                 </span>
               </div>
-              <a href="https://dashboard.abify.app/" className="block w-full py-3 px-6 bg-[#4285F4] text-white rounded-lg font-semibold hover:bg-[#4285F4]/90 transition-colors text-center">
+              <a 
+                href="https://dashboard.abify.app/" 
+                onClick={() => trackCTAClick('pricing_pro_upgrade')}
+                className="block w-full py-3 px-6 bg-[#4285F4] text-white rounded-lg font-semibold hover:bg-[#4285F4]/90 transition-colors text-center"
+              >
                 Upgrade to Pro
               </a>
               <div className="mt-8 space-y-3">
@@ -197,7 +206,11 @@ export default function PricingSection() {
                   Per month{billingPeriod === 'yearly' && ', billed annually'}
                 </span>
               </div>
-              <a href="https://dashboard.abify.app/" className="block w-full py-3 px-6 bg-[#4285F4] text-white rounded-lg font-semibold hover:bg-[#4285F4]/90 transition-colors text-center">
+              <a 
+                href="https://dashboard.abify.app/" 
+                onClick={() => trackCTAClick('pricing_enterprise_upgrade')}
+                className="block w-full py-3 px-6 bg-[#4285F4] text-white rounded-lg font-semibold hover:bg-[#4285F4]/90 transition-colors text-center"
+              >
                 Upgrade to Enterprise
               </a>
               <div className="mt-8 space-y-3">
