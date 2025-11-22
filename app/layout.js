@@ -125,7 +125,7 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={inter.variable} style={{opacity:"0"}}>
       <head>
         <script
           type="application/ld+json"
