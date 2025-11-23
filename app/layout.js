@@ -135,6 +135,20 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`${inter.className} antialiased`}>
+        {/* Google tag (gtag.js) - Google Ads */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17597821273"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17597821273');
+          `}
+        </Script>
+        
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Q208LW3FKS"
@@ -149,7 +163,6 @@ export default function RootLayout({ children }) {
               page_title: document.title,
               page_location: window.location.href,
             });
-            gtag('config', 'AW-17597821273');
           `}
         </Script>
         
